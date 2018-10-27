@@ -1,5 +1,4 @@
-# This file was designed to interact with my home Hue system.
-# The script includes functions to Toggle and Select Lights at will.
+# The script includes functions to interact with your Hue system
 
 
 import requests
