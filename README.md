@@ -1,5 +1,5 @@
 # HueApi
-A small collection of scripts I wrote to access my lights while working at my computer
+A small collection of scripts I wrote to access my lights while working at my computer. This only works with Python3.
 
 # Dependencies
 [Requests](http://docs.python-requests.org/en/master/)
@@ -7,11 +7,15 @@ A small collection of scripts I wrote to access my lights while working at my co
 You also need to make sure you follow the tutorial found [Here](https://developers.meethue.com/documentation/getting-started)
 You only need to follow steps 1 - 3. 
 
+Once you've finished following the tutorial, replace the 'apiPrefix' and 'user' values found in the hueapi.py file. This is crucial in being able to use the scripts.
+
 # Examples
-This is pretty straight forward. Run the scripts using their proper parameters. 
+This is pretty straight forward. Run the scripts using their proper parameters.
 
 #### Toggle Light
-
+```$ python3 toggle.py```
 #### Change Brightness
+```$ python3 brightness.py 100 1```
 #### Change Color
+```$ python3 color red 1```
 
