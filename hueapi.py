@@ -46,7 +46,6 @@ def GetLightByNum(id):
 def ToggleLight(id):
     light = GetLightByNum(id)
     lightState = light['state']['on']
-    print(lightState)
     if(str(lightState) == 'True'):
         UserRequest('PUT', f'lights/{id}/state', '{"on":false}')
     elif(str(lightState) == 'False'):
@@ -56,25 +55,19 @@ def ToggleLight(id):
 def ChangeColor(id: int, color: str):
     if(color == 'green'):
         data = '{"on":true, "sat":254, "bri":254,"hue":20202}'
-        print(data)
         UserRequest('PUT', f'lights/{id}/state', data)
     elif(color == 'red'):
         data = '{"on":true, "sat":254, "bri":254,"hue":65060}'
-        print(data)
         UserRequest('PUT', f'lights/{id}/state', data)
     elif(color == 'yellow'):
         data = '{"on":true, "sat":254, "bri":254,"hue":10101}'
-        print(data)
         UserRequest('PUT', f'lights/{id}/state', data)
     elif(color == 'blue'):
         data = '{"on":true, "sat":254, "bri":254,"hue":45454}'
-        print(data)
         UserRequest('PUT', f'lights/{id}/state', data)
     elif(color == 'purple'):
         data = '{"on":true, "sat":254, "bri":254,"hue":50505}'
-        print(data)
         UserRequest('PUT', f'lights/{id}/state', data)
     elif(color == 'white'):
         data = '{"on":true, "sat":150, "bri":254,"hue":10000}'
-        print(data)
         UserRequest('PUT', f'lights/{id}/state', data)
