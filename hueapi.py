@@ -5,8 +5,8 @@
 import requests
 
 
-apiPrefix = 'http://192.168.1.2/api/'
-user = 'yXKZIG6RR3uORYdUr4ITxSEQ-kOjqigtoTj9x-mq/'
+apiPrefix = 'FOLLOW TUTORIAL'
+user = 'FOLLOW TUTORIAL'
 
 
 def MakeRequest(type, requestString="", data=""):
