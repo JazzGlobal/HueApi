@@ -16,9 +16,13 @@ This is pretty straight forward. Run the scripts using their proper parameters.
 ```$ python3 toggle.py 1```
 #### Change Brightness
 Increases the brightness of Light ID 1 by 100.
+
 ```$ python3 brightness.py 100 1```
+
 Decreases the brightness of Light ID 1 by 100.
+
 ```$ python3 brightness.py -100 1```
+
 #### Change Color
 Changes Color of Light ID 1 to Red. 
 ```$ python3 color red 1```
