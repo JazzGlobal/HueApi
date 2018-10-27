@@ -1,3 +1,6 @@
 import hueapi as Hue
+import sys
 
-Hue.ToggleLight(2)
+lightId = sys.argv(1)
+
+Hue.ToggleLight(lightId)
